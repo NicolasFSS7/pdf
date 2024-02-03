@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Components/Components/styles.css" rel="stylesheet">
+    <link href="Components/Components/fonts.css" rel="stylesheet">
+    <title></title>
+
+    <style>
+        body {
+            background-color: rgb(34, 34, 34);
+            color: white;
+            font-family: poppinsregular;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #title {
+            flex-direction: column;
+            line-height: 10px;
+        }
+
+        h1 {
+            font-weight: 200;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        a {
+            margin: 5px; /* Reduzi a margem para aproximá-las */
+            flex: 0 0 calc(33.33% - 10px); /* Ajusta a largura para três imagens por coluna com margem */
+            box-sizing: border-box; /* Considera a margem dentro da largura do elemento */
+            text-align: center; /* Centraliza o texto no bloco a */
+        }
+
+        img {
+            width: 100%; /* Ajusta a largura da imagem para preencher a âncora */
+            max-width: 100px; /* Define o tamanho máximo da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            cursor: pointer;
+            display: block; /* Remove espaço extra abaixo da imagem */
+            margin: 0 auto; /* Centraliza a imagem no bloco a */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>PDF CONVERSOR</h1>
+        </div>
+
+        <ul>
+            <li><a href="#">Converter PDF</a></li>
+            <li><a href="#">Converter Word</a></li>  
+            <li><a href="#">Converter PNG</a></li>
+            <li><a href="#">Converter JPG</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <a href="#"><img src="PDF.png" alt="Imagem 1"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 2"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 3"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 4"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 5"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 6"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 7"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 8"></a>
+        <a href="#"><img src="PDF.png" alt="Imagem 9"></a>
+    </main>
+</body>
+</html>
